@@ -10,7 +10,6 @@ import java.util.*;
 
 public class IsoContest {
 public static void main( String[] argv ) throws Exception {
-		
 		Scanner sc = new Scanner(System.in);
 
         String l1 = sc.nextLine();
@@ -27,19 +26,19 @@ public static void main( String[] argv ) throws Exception {
             if(ancienPoint == -1) {
                 ancienPoint = Integer.valueOf(l2Split[0]);
             }else{
-				currentPoint = Integer.valueOf(l2Split[i]);
+            currentPoint = Integer.valueOf(l2Split[i]);
 
-				if(currentPoint == valeurRech && valeurRech == ancienPoint) {
-					System.out.println("INF");
-					res = -1;
-					break;
-				}else if(currentPoint >= valeurRech && ancienPoint < valeurRech || currentPoint <= valeurRech && ancienPoint > valeurRech) {
-					res++;
-				}
-				ancienPoint=currentPoint;
+            if(currentPoint == valeurRech && valeurRech == ancienPoint) {
+                System.out.println("INF");
+                res = -1;
+                break;
+            }else if(currentPoint >= valeurRech && ancienPoint < valeurRech || currentPoint <= valeurRech && ancienPoint > valeurRech) {
+                res++;
+            }
+            ancienPoint=currentPoint;
             }
         }
         if(res != -1) {
-			System.out.println(res);
+        System.out.println(res);
 	}
 }
