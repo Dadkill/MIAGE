@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jeu>
+    <zones>
+        <zone id="0" description="la salle de départ" image="salleGenerique.jpg">
+            <sorties>
+                <sortie id="1" position="OUEST"/>
+                <sortie id="2" position="NORD"/>
+                <sortie id="3" position="EST"/>
+            </sorties>
+            <enigmes>
+                <enigme type="olivettom" bloquage="3" solution="Malloc">
+                    Mon 1er est un adjectif possessif.
+                    Mon 2e vaut verrouiller en anglais. 
+                    Mon tout permet de réaliser une allocation mémoire. 
+                    Qui suis-je ?
+                </enigme>
+            </enigmes>
+        </zone>
+        <zone id="1" description="la salle des leviers" image="salleLeviers.jpg">
+            <sorties>
+                <sortie id="0" position="EST"/>
+            </sorties>
+            <enigmes>
+                <enigme type="piliers" bloquage="2" solution="2-3-1">
+                    Ces leviers semblent pouvoir bouger
+            </enigme>
+            </enigmes>
+            
+        </zone>
+        <zone id="2" description="Salle du 1er parchemin" image="salleCoffre.jpg">
+            <sorties>
+                <sortie id="0" position="SUD"/>
+            </sorties>
+            <parchemins>
+                <parchemin nom="1er Parchemin"/>
+            </parchemins>
+        </zone>
+        <zone id="3" description="Salle du 2e parchemin" image="salleCoffre.jpg">
+            <sorties>
+                <sortie id="0" position="OUEST"/>
+                <sortie id="4" position="EST"/>
+            </sorties>
+            <parchemins>
+                <parchemin nom="2 Parchemin"/>
+            </parchemins>
+        </zone>
+        <zone id="4" description="Salle aux 2 enigmes" image="sallePilliers.jpg">
+            <sorties>
+                <sortie id="3" position="SUD"/>
+                <sortie id="5" position="EST"/>
+                <sortie id="6" position="NORD"/>
+                <sortie id="7" position="OUEST"/>
+            </sorties>
+            <enigmes>
+                <enigme type="dilleme" solution="Savoir" zoneGagnante="6" zonePerdante="7">
+                    Il faut faire le choix entre deux chemins : 
+                    <propositions>
+                        <proposition>Trésor</proposition>
+                        <proposition>Savoir</proposition>
+                    </propositions>
+                </enigme>
+                <enigme type="couleurs" bloquage="5">
+                    Quels codes hexadécimaux correspondent 
+                    aux couleurs suivantes : 
+                </enigme>
+            </enigmes>
+        </zone>
+        <zone id="5" description="Salle du 4e parchemin" image="salleCoffre.jpg">
+            <sorties>
+                <sortie id="4" position="OUEST"/>
+            </sorties>
+            <parchemins>
+                <parchemin nom="4e Parchemin"/>
+            </parchemins>
+        </zone>
+        <zone id="6" description="Salle du 3e parchemin" image="salleCoffre.jpg">
+            <sorties>
+                <sortie id="4" position="SUD"/>
+            </sorties>
+            <parchemins>
+                <parchemin nom="3e Parchemin"/>
+            </parchemins>
+        </zone>
+        <zone id="7" description="Salle au trésor" image="salleTerros.jpg">
+        </zone>
+    </zones>
+    <zoneRoi description="Salle du trône" image="salleRoi.jpg"/>
+    <ressources>
+        <ressource id="couleur-bleu" valeur="couleurBleu.png"/>
+        <ressource id="couleur-noir" valeur="couleurNoir.png"/>
+        <ressource id="couleur-rouge" valeur="couleurRouge.png"/>
+        <ressource id="couleur-blanc" valeur="couleurBlanc.png"/>
+        <ressource id="levierF" valeur="levierF.png"/>
+        <ressource id="levierO" valeur="levierO.png"/>
+        <ressource id="i-enigme" valeur="enigme.png"/>
+        <ressource id="i-parchemin" valeur="parchemin.png"/>
+    </ressources>
+    <strings>
+        <string id="t-help">Tapez '?' pour obtenir de l'aide.</string>
+        <string id="t-entree-salle">Bienvenue dans la %s"</string>
+        <string id="t-cancel">Abandon</string>
+        <string id="h-enigme">Commandes d'une énigme :
+            ->Q : Quitter l'énigme
+            ->Toute valeur : réponse
+        </string>
+        <string id="t-non-proposee">Cette réponse n'est pas proposée</string>
+        <string id="t-porte-ouverte">Une porte s'est ouverte</string>
+        <string id="t-bonne-reponse">C'est une bonne réponse...</string>
+        <string id="t-mauvaise-reponse">Mauvaise réponse. Réessayez</string>
+        <string id="t-nb-parchemins">Vous avez %d parchemins.</string>
+        <string id="h-main">Voici les commandes du jeu :
+            Déplacements :
+            -> N : Avancer vers le Nord 
+            -> S : Avancer vers le Sud
+            -> E : Avancer vers l'Est
+            -> O : Avancer vers l'Ouest
+            Actions :
+            -> R : Répondre à une énigme
+            -> P : Récupérer un parchemin
+            -> B : Connaître le contenu de son sac
+            -> Q : Quitter l'application
+        </string>
+        <string id="t-gagne">Vous avez gagné !</string>
+        <string id="q-couleur">Quelle couleur ?</string>
+        <string id="q-hexa">Quel est le code hexadécimal correspondant ?</string>
+        <string id="q-code">Saisissez le code : </string>
+        <string id="q-quitter">Quitter le jeu</string>
+        <string id="q-quitter-texte">Le jeu va se quitter.
+            Aucune donnée de la partie sera sauvegardée.
+        </string>
+        <string id="q-quitter-sure">Etes-vous sur de vouloir quitter ?</string>
+        
+    </strings>
+</jeu>

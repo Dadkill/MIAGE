@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane fx:id="main" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" styleClass="main" stylesheets="@../styles/Styles.css" xmlns="http://javafx.com/javafx/9" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.GameController">
+   <children>
+      <GridPane layoutX="-2.0" layoutY="-1.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <columnConstraints>
+          <ColumnConstraints percentWidth="65.0" />
+            <ColumnConstraints percentWidth="35.0" />
+        </columnConstraints>
+        <rowConstraints>
+            <RowConstraints vgrow="ALWAYS" />
+        </rowConstraints>
+         <children>
+            <GridPane fx:id="img" styleClass="img-back">
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="15.0" minWidth="15.0" prefWidth="15.0" />
+                <ColumnConstraints hgrow="SOMETIMES" percentWidth="23.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="65.0" percentWidth="23.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" percentWidth="23.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" percentWidth="23.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="15.0" minWidth="15.0" prefWidth="15.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints maxHeight="15.0" minHeight="15.0" prefHeight="15.0" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="379.0" minHeight="10.0" prefHeight="366.0" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="15.0" minHeight="15.0" prefHeight="15.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <Label fx:id="indiouest" styleClass="imageview-label" text="O" textFill="WHITE" GridPane.rowIndex="1" />
+                  <Label fx:id="indinord" styleClass="imageview-label" text="N" textFill="WHITE" GridPane.columnIndex="3" />
+                  <Label fx:id="indiest" styleClass="imageview-label" text="E" textFill="WHITE" GridPane.columnIndex="5" GridPane.rowIndex="1" />
+                  <Label fx:id="indisud" styleClass="imageview-label" text="S" textFill="WHITE" GridPane.columnIndex="3" GridPane.rowIndex="2" />
+                  <AnchorPane fx:id="cent1" onMousePressed="#onClickImageHandler" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                  <AnchorPane fx:id="cent2" onMousePressed="#onClickImageHandler" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+                  <AnchorPane fx:id="cent3" onMousePressed="#onClickImageHandler" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="3" GridPane.rowIndex="1" />
+                  <AnchorPane fx:id="cent4" onMousePressed="#onClickImageHandler" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="4" GridPane.rowIndex="1" />
+                  <ImageView fx:id="paricon" fitHeight="15.0" fitWidth="15.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" />
+                  <ImageView fx:id="enigmeicon" fitHeight="15.0" fitWidth="15.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2" />
+               </children>
+            </GridPane>
+            <GridPane GridPane.columnIndex="1">
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="357.0" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="32.0" minHeight="32.0" prefHeight="32.0" />
+              </rowConstraints>
+               <children>
+                  <ScrollPane fx:id="scrollPane" prefWidth="287.0">
+                     <content>
+                        <VBox fx:id="text" />
+                     </content>
+                  </ScrollPane>
+                  <TextField fx:id="input" maxHeight="-Infinity" onAction="#validerEntree" GridPane.rowIndex="1" />
+               </children>
+            </GridPane>
+         </children>
+      </GridPane>
+   </children>
+</AnchorPane>

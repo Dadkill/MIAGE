@@ -1,0 +1,186 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!181963792 &2655988077585873504
+Preset:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: TilesManager
+  m_TargetType:
+    m_NativeTypeID: 114
+    m_ManagedTypePPtr: {fileID: 11500000, guid: e16e287d25ce0ee47b9d5c3983fe3a96,
+      type: 3}
+    m_ManagedTypeFallback: 
+  m_Properties:
+  - target: {fileID: 0}
+    propertyPath: m_Enabled
+    value: 1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_EditorHideFlags
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_Name
+    value: 
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_EditorClassIdentifier
+    value: 
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: locked_doors_tilemap
+    value: 
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: enigm_button_tilemap
+    value: 
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: buttonsOff.Array.size
+    value: 3
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: buttonsOff.Array.data[0]
+    value: 
+    objectReference: {fileID: 11400000, guid: fc56e1010446e9e44ad1afc948d8f968, type: 2}
+  - target: {fileID: 0}
+    propertyPath: buttonsOff.Array.data[1]
+    value: 
+    objectReference: {fileID: 11400000, guid: 6a8ad7bd7d7483a49a9cd3a572dce4fa, type: 2}
+  - target: {fileID: 0}
+    propertyPath: buttonsOff.Array.data[2]
+    value: 
+    objectReference: {fileID: 11400000, guid: 5221000eb0756fb4494babb025ac71bb, type: 2}
+  - target: {fileID: 0}
+    propertyPath: buttonsOn.Array.size
+    value: 3
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: buttonsOn.Array.data[0]
+    value: 
+    objectReference: {fileID: 11400000, guid: cff17888c0b781a469bd68d15235134c, type: 2}
+  - target: {fileID: 0}
+    propertyPath: buttonsOn.Array.data[1]
+    value: 
+    objectReference: {fileID: 11400000, guid: fcbe28a316d5fa14a90df72cc142a8a5, type: 2}
+  - target: {fileID: 0}
+    propertyPath: buttonsOn.Array.data[2]
+    value: 
+    objectReference: {fileID: 11400000, guid: fe6297d49fbc9824094ecdbd71b75a36, type: 2}
+  - target: {fileID: 0}
+    propertyPath: button_playerCode
+    value: 
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: button_goodCode
+    value: 753
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: button_enigm_finded
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: chests_tilemap
+    value: 
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: chestsClose.Array.size
+    value: 4
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: chestsClose.Array.data[0]
+    value: 
+    objectReference: {fileID: 11400000, guid: b53d4c2fc9713304e8b4738c40e1ee5b, type: 2}
+  - target: {fileID: 0}
+    propertyPath: chestsClose.Array.data[1]
+    value: 
+    objectReference: {fileID: 11400000, guid: 788231d99e9ada64a894dbe1882aba09, type: 2}
+  - target: {fileID: 0}
+    propertyPath: chestsClose.Array.data[2]
+    value: 
+    objectReference: {fileID: 11400000, guid: 4724be098c8a310478fcc431db0bd76a, type: 2}
+  - target: {fileID: 0}
+    propertyPath: chestsClose.Array.data[3]
+    value: 
+    objectReference: {fileID: 11400000, guid: f8c2560d5e4dda04cb10df87b8fc0b92, type: 2}
+  - target: {fileID: 0}
+    propertyPath: chestsOpen.Array.size
+    value: 4
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: chestsOpen.Array.data[0]
+    value: 
+    objectReference: {fileID: 11400000, guid: e68a5be55001ff24db5e32f3ea08d02a, type: 2}
+  - target: {fileID: 0}
+    propertyPath: chestsOpen.Array.data[1]
+    value: 
+    objectReference: {fileID: 11400000, guid: 5c14358874b4fec418d85fefeb9097cc, type: 2}
+  - target: {fileID: 0}
+    propertyPath: chestsOpen.Array.data[2]
+    value: 
+    objectReference: {fileID: 11400000, guid: 935348ff1239f3e469739e47ad31738c, type: 2}
+  - target: {fileID: 0}
+    propertyPath: chestsOpen.Array.data[3]
+    value: 
+    objectReference: {fileID: 11400000, guid: d327e8b162783be468d498bb5410288d, type: 2}
+  - target: {fileID: 0}
+    propertyPath: topchest_tile
+    value: 
+    objectReference: {fileID: 11400000, guid: c94d8395246e5424380c414ddaedd39a, type: 2}
+  - target: {fileID: 0}
+    propertyPath: cols_enigm_tilemap
+    value: 
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: cols_playercode
+    value: 
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: cols_goodcode
+    value: 1324
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: cols_enigm_finded
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: cols_off.Array.size
+    value: 4
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: cols_off.Array.data[0]
+    value: 
+    objectReference: {fileID: 11400000, guid: 0ca5049c19a52e348a195743fa85d2ec, type: 2}
+  - target: {fileID: 0}
+    propertyPath: cols_off.Array.data[1]
+    value: 
+    objectReference: {fileID: 11400000, guid: 75787e5150f51b642b4bfc6a480ce7d0, type: 2}
+  - target: {fileID: 0}
+    propertyPath: cols_off.Array.data[2]
+    value: 
+    objectReference: {fileID: 11400000, guid: c5040db98883f1445b5f46ed35d9f8b4, type: 2}
+  - target: {fileID: 0}
+    propertyPath: cols_off.Array.data[3]
+    value: 
+    objectReference: {fileID: 11400000, guid: 6957e82981310af44bfe073956541335, type: 2}
+  - target: {fileID: 0}
+    propertyPath: cols_on.Array.size
+    value: 4
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: cols_on.Array.data[0]
+    value: 
+    objectReference: {fileID: 11400000, guid: 5812718430204874dbca221d239b5438, type: 2}
+  - target: {fileID: 0}
+    propertyPath: cols_on.Array.data[1]
+    value: 
+    objectReference: {fileID: 11400000, guid: 13fe4c4b1d0ad514bbd56478ec75d4ed, type: 2}
+  - target: {fileID: 0}
+    propertyPath: cols_on.Array.data[2]
+    value: 
+    objectReference: {fileID: 11400000, guid: f3fe6de9d451d35428e0bbba1078d681, type: 2}
+  - target: {fileID: 0}
+    propertyPath: cols_on.Array.data[3]
+    value: 
+    objectReference: {fileID: 11400000, guid: ae8663244e8eeaf42bdf5f1f2c8b2acb, type: 2}

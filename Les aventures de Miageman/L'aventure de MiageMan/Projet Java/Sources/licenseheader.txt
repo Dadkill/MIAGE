@@ -1,0 +1,7 @@
+<#if licenseFirst??>
+${licenseFirst}
+</#if>
+${licensePrefix}© Groupe MiageMan - L3I MIAGE Aix-Marseille Tous droits réservés
+<#if licenseLast??>
+${licenseLast}
+</#if>

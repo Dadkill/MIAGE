@@ -1,0 +1,18 @@
+.button {
+    -fx-font-weight: bold;
+}
+.bot-text {
+    -fx-background-color: lightgrey;
+}
+
+.imageview-label{
+    -fx-background-color:none;
+}
+.img-back{
+    -fx-effect: dropshadow(three-pass-box, white, 10, 0, 0, 0);
+}
+
+.main {
+    -fx-background-color: #090f0f;
+    
+}
